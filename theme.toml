@@ -15,6 +15,11 @@ demo = "https://zola-bearblog.netlify.app/"
 date_format="%d %b, %Y"
 webserver_sends_csp_headers=false
 
+[extra.table_of_contents]
+show=false
+max_level=6
+visible_on_load=true
+
 [author]
 name = "Alan Pearce"
 homepage = "https://alanpearce.eu"

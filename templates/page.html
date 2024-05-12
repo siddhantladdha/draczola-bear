@@ -1,3 +1,4 @@
+{% import "macros.html" as macros %}
 {% extends "base.html" %}
 
 {% block title %}{{ page.title }} | {{ super() }}{% endblock %}
@@ -14,6 +15,12 @@
         </i>
       </p>
     {%- endif %}
+  {%- endif %}
+  {%- if config.extra.table_of_contents.show and not page.extra.hide_table_of_contents and page.toc %}
+    <details {%if config.extra.table_of_contents.visible_on_load %}open{% endif %}>
+      <summary>Table of Contents</summary>
+      {{ macros::table_of_contents(toc=page.toc, max_level=config.extra.table_of_contents.max_level) }}
+    </details>
   {%- endif %}
   <main>
     {{ page.content | safe }}

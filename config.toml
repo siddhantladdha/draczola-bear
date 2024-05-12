@@ -45,11 +45,15 @@ highlight_code = true
 date_format="%Y-%m-%d"
 webserver_sends_csp_headers=true
 language_switcher=true
-
 translations = [
   { code="en", name="English" },
   { code="de", name="Deutsch" },
 ]
+
+[extra.table_of_contents]
+show=true
+max_level=2
+visible_on_load=true
 
 [[extra.main_menu]]
 name = "Home"
