@@ -1,7 +1,6 @@
 # Zola ʕ•ᴥ•ʔ Bear Blog
 
 [![Netlify Deploy](http://img.shields.io/netlify/121b53ce-c913-4604-9179-eb3cca31cd2c?logo=netlify)](https://app.netlify.com/sites/zola-bearblog/deploys)
-[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/zola-bearblog)](https://zola-bearblog.vercel.app/_logs)
 [![Forgejo Actions Status](https://codeberg.org/alanpearce/zola-bearblog/badges/workflows/zola.yaml/badge.svg)](https://codeberg.org/alanpearce/zola-bearblog/actions)
 [![Gitlab Pipeline Status](https://gitlab.com/alanpearce/zola-bearblog/badges/main/pipeline.svg)](https://gitlab.com/alanpearce/zola-bearblog/-/commits/main)
 
@@ -24,7 +23,6 @@ This theme has multiple demo sites, to provide examples of how to set up deploym
 
 These providers' build environments aren't yet compatible with Zola 0.21.0.
 - [Cloudflare Pages](https://zola-bearblog.pages.dev/)
-- [Vercel](https://zola-bearblog.vercel.app/)
 
 ## Screenshot
 
