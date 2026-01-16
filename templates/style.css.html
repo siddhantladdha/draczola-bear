@@ -1,29 +1,27 @@
-  :root {
+{% if config.extra.color_scheme == "alucard" %}
+{% include "alucard.css.html" ignore missing %}
+{% else %} 
+{% include "dracula.css.html" %}
+{% endif %}
+
+:root {
+  /* mappings for website */
+  --background-color: var(--background);
+  --heading-color: var(--pink);
+  --text-color: var(--foreground);
+  --link-color: var(--cyan);
+  --visited-color: var(--purple);
+  --code-background-color: var(--background-dark);
+  --code-color: var(--foreground);
+  --blockquote-border-color: var(--orange);
+  --mark-background-color: var(--background-color);
+  --mark-color: var(--yellow);
+}
+:root {
     --width: 800px;
     --font-main: Verdana, sans-serif;
     --font-secondary: Verdana, sans-serif;
     --font-scale: 1em;
-    --background-color: #fff;
-    --heading-color: #222;
-    --text-color: #444;
-    --link-color: #3273dc;
-    --visited-color: #8b6fcb;
-    --code-background-color: #f2f2f2;
-    --code-color: #222;
-    --blockquote-color: #222;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background-color: #01242e;
-      --heading-color: #eee;
-      --text-color: #ddd;
-      --link-color: #8cc2dd;
-      --visited-color: #8b6fcb;
-      --code-background-color: #000;
-      --code-color: #ddd;
-      --blockquote-color: #ccc;
-    }
   }
 
   body {
@@ -113,8 +111,12 @@
     border-radius: 3px;
   }
 
+  mark {
+    background-color: var(--mark-background-color);
+    color: var(--mark-color);
+  }
   blockquote {
-    border-left: 1px solid #999;
+    border-left: 1px solid var(--blockquote-border-color);
     color: var(--code-color);
     padding-left: 20px;
     font-style: italic;
