@@ -1,28 +1,24 @@
 # Zola ʕ•ᴥ•ʔ Bear Blog
 
-[![Netlify Deploy](http://img.shields.io/netlify/121b53ce-c913-4604-9179-eb3cca31cd2c?logo=netlify)](https://app.netlify.com/sites/zola-bearblog/deploys)
-[![Forgejo Actions Status](https://codeberg.org/alanpearce/zola-bearblog/badges/workflows/zola.yaml/badge.svg)](https://codeberg.org/alanpearce/zola-bearblog/actions)
-[![Gitlab Pipeline Status](https://gitlab.com/alanpearce/zola-bearblog/badges/main/pipeline.svg)](https://gitlab.com/alanpearce/zola-bearblog/-/commits/main)
-
 🧸 A [Zola](https://www.getzola.org/)-theme based on [Bear Blog](https://bearblog.dev).
 
 > Free, no-nonsense, super-fast blogging.
 
 ## Demo
 
-This theme has multiple demo sites, to provide examples of how to set up deployment.
+This theme repository includes a demo site deployed at:
+- [GitHub Pages](https://siddhantladdha.github.io/draczola-bear/)
 
-### Recommended
+This is a fork with custom enhancements including modular color schemes (Bear and Dracula themes).
+
+### Other demo sites
+
+The original theme has multiple demo sites to provide examples of how to set up deployment:
 
 - [Netlify](https://zola-bearblog.netlify.app/)
 - [Grebedoc](https://alanpearce.grebedoc.dev/zola-bearblog/)
 - [Codeberg Pages](https://alanpearce.codeberg.page/zola-bearblog/)
 - [Gitlab Pages](https://alanpearce.gitlab.io/zola-bearblog)
-
-### Not recommended
-
-These providers' build environments aren't yet compatible with Zola 0.21.0.
-- [Cloudflare Pages](https://zola-bearblog.pages.dev/)
 
 ## Screenshot
 
@@ -85,7 +81,22 @@ The contents of the `index`-page may be changed by editing your `content/_index.
 
 ### Adding your branding / colors / css
 
-Add a `custom_head.html`-file to your `templates/`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://codeberg.org/alanpearce/zola-bearblog/src/branch/main/templates/style.css.html)-file to find out which CSS-styles are applied by default.
+#### Color Schemes
+
+This fork includes two built-in color schemes that can be selected in `config.toml`:
+
+```toml
+[extra]
+# Choose color scheme: "bear" (default), "dracula"
+color_scheme = "bear"
+```
+
+- **bear**: The original Bear Blog color scheme (light theme with dark mode support)
+- **dracula**: A vibrant Dracula-inspired color scheme (Alucard light theme with Dracula dark mode)
+
+#### Custom CSS
+
+You can further customize the appearance by adding a `custom_head.html`-file to your `templates/`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.css.html`](templates/style.css.html)-file to find out which CSS-styles are applied by default.
 
 ### Table of contents
 

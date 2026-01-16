@@ -1,5 +1,5 @@
 title = "Zola ʕ•ᴥ•ʔ Bear Blog"
-base_url = "/"
+base_url = "https://siddhantladdha.github.io/draczola-bear/"
 description = "A Zola-theme based on Bear Blog."
 
 generate_feeds = true
