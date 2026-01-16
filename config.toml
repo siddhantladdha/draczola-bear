@@ -53,6 +53,7 @@ highlight_code = false
 date_format = "%Y-%m-%d"
 webserver_sends_csp_headers = true
 language_switcher = true
+colorscheme = "dracula"
 translations = [
   { code = "en", name = "English" },
   { code = "de", name = "Deutsch" },
