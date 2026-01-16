@@ -2,10 +2,11 @@ name: Zola on GitHub Pages
 
 on: workflow_dispatch
 
-#on: 
- #push:
-  #branches:
-   #- main
+# Uncomment to enable automatic deployment on push to main
+# on: 
+#   push:
+#     branches:
+#       - main
 
 jobs:
   build:
