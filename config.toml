@@ -1,6 +1,6 @@
-title = "Zola ʕ•ᴥ•ʔ Bear Blog"
+title = "Draczola ʕ•ᴥ•ʔ Blog"
 base_url = "/"
-description = "A Zola-theme based on Bear Blog."
+description = "A Zola-theme based on Bear Blog in Dracula colors (A universal dark theme)"
 
 generate_feeds = true
 
@@ -26,6 +26,7 @@ table_of_contents = "Table of contents"
 language = "language"
 site = "site"
 
+# No idea.
 [languages.de]
 title = "Zola ʕ•ᴥ•ʔ Bear Blog"
 description = "Ein Zola-theme basiert auf Bear Blog."
@@ -44,12 +45,16 @@ table_of_contents = "Inhaltsverzeichnis"
 language = "Sprache"
 site = "Site"
 
-[markdown]
 # Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+# Changed since 0.22.0 release:
+[markdown.highlighting]
+theme = "dracula"
+error_on_missing_language = true
 
 [extra]
+extra]
+# Choose color scheme: "dracula" (default), "alucard"
+color_scheme = "dracula"
 date_format = "%Y-%m-%d"
 webserver_sends_csp_headers = true
 language_switcher = true
