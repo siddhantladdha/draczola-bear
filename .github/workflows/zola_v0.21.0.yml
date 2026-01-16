@@ -1,4 +1,4 @@
-name: Zola on GitHub Pages
+name: Zola@v0.21.0 on GitHub Pages
 
 on: workflow_dispatch
 
