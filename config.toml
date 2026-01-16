@@ -50,6 +50,9 @@ site = "Site"
 highlight_code = false
 
 [extra]
+# Choose color scheme: "bear" (default), "dracula"
+# This is site wide color scheme.
+color_scheme = "bear"
 date_format = "%Y-%m-%d"
 webserver_sends_csp_headers = true
 language_switcher = true
