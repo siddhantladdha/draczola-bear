@@ -1,7 +1,7 @@
 title = "Draczola ʕ•ᴥ•ʔ Blog"
 base_url = "http://siddhantladdha.com/draczola-bear/"
 description = "A Zola-theme based on Bear Blog in Dracula colors (A universal dark theme)"
-
+author = "Vlad Dracula"
 generate_feeds = true
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -9,6 +9,11 @@ compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+generate_sitemap = true
+
+# When set to "false", robots.txt is not generated
+generate_robots_txt = true
 
 taxonomies = [
   { name = "categories", feed = true },
@@ -44,7 +49,9 @@ made_with = "Erstellt mit"
 table_of_contents = "Inhaltsverzeichnis"
 language = "Sprache"
 site = "Site"
-
+[markdown]
+# Whether footnotes are rendered in the GitHub-style (at the bottom, with back references) or plain (in the place, where they are defined)
+bottom_footnotes = false
 # Whether to do syntax highlighting
 # Changed since 0.22.0 release:
 [markdown.highlighting]
@@ -61,7 +68,10 @@ translations = [
   { code = "en", name = "English" },
   { code = "de", name = "Deutsch" },
 ]
-
+# Change to true to
+# hide made with line.
+hide_made_with_line = false
+show_copyright_in_footer = true
 [extra.table_of_contents]
 show = true
 max_level = 2
