@@ -1,29 +1,22 @@
-# Zola ʕ•ᴥ•ʔ Bear Blog
+# Draczola ʕ•ᴥ•ʔ Bear Blog
 
-[![Netlify Deploy](http://img.shields.io/netlify/121b53ce-c913-4604-9179-eb3cca31cd2c?logo=netlify)](https://app.netlify.com/sites/zola-bearblog/deploys)
-[![Forgejo Actions Status](https://codeberg.org/alanpearce/zola-bearblog/badges/workflows/zola.yaml/badge.svg)](https://codeberg.org/alanpearce/zola-bearblog/actions)
-[![Gitlab Pipeline Status](https://gitlab.com/alanpearce/zola-bearblog/badges/main/pipeline.svg)](https://gitlab.com/alanpearce/zola-bearblog/-/commits/main)
+[![Zola on GitHub Pages](https://github.com/siddhantladdha/draczola-bear/actions/workflows/zola.yml/badge.svg?branch=main)](https://github.com/siddhantladdha/draczola-bear/actions/workflows/zola.yml)
+[![pages-build-deployment](https://github.com/siddhantladdha/draczola-bear/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/siddhantladdha/draczola-bear/actions/workflows/pages/pages-build-deployment)
 
-🧸 A [Zola](https://www.getzola.org/)-theme based on [Bear Blog](https://bearblog.dev).
+🧸 A [Zola](https://www.getzola.org/)-theme based on [Bear Blog](https://bearblog.dev) now in [Dracula colors](https://draculatheme.com/)
 
 > Free, no-nonsense, super-fast blogging.
+> Dracula is a universal dark theme.
+
+This theme is a fork of all the hardwork by [Alan Pearce and Contributors](https://codeberg.org/alanpearce/zola-bearblog). 
 
 ## Demo
 
-This theme has multiple demo sites, to provide examples of how to set up deployment.
+[Github Pages Demo](https://siddhantladdha.com/draczola-bear/)
 
-### Recommended
+The [original theme](https://codeberg.org/alanpearce/zola-bearblog) has multiple demo sites, to provide examples of how to set up deployment.
 
-- [Netlify](https://zola-bearblog.netlify.app/)
-- [Grebedoc](https://alanpearce.grebedoc.dev/zola-bearblog/)
-- [Codeberg Pages](https://alanpearce.codeberg.page/zola-bearblog/)
-- [Gitlab Pages](https://alanpearce.gitlab.io/zola-bearblog)
-
-### Not recommended
-
-These providers' build environments aren't yet compatible with Zola 0.21.0.
-- [Cloudflare Pages](https://zola-bearblog.pages.dev/)
-
+TODO: Update instructions and illustrate forkability. 
 ## Screenshot
 
 ![Screenshot][screenshot]
