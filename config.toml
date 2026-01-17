@@ -1,5 +1,5 @@
 title = "Draczola ʕ•ᴥ•ʔ Blog"
-base_url = "/"
+base_url = "http://siddhantladdha.com/draczola-bear/"
 description = "A Zola-theme based on Bear Blog in Dracula colors (A universal dark theme)"
 
 generate_feeds = true
