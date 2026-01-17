@@ -6,6 +6,7 @@ taxonomies.tags = [
     "markdown",
     "syntax",
 ]
+[extra]
 math = true
 +++
 
