@@ -35,4 +35,7 @@
       {%- endfor %}
     {%- endif %}
   </p>
+{% if page.extra.math %}
+{%- include "math.html" ignore missing -%}
+{% endif %}
 {% endblock %}
