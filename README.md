@@ -117,6 +117,8 @@ Please use [Codeberg issues](https://codeberg.org/alanpearce/zola-bearblog/issue
 
 A special thank you goes out to [Herman](https://herman.bearblog.dev), for creating the original [ʕ•ᴥ•ʔ Bear Blog](https://bearblog.dev/) and [Jan Raasch](https://www.janraasch.com) for creating the hugo port of the Bear Blog theme.
 
+[Gist for MathJax support](https://gist.github.com/mathwo/4958a7e50be85743615c18d9e34109e9)
+
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Alan Pearce](https://www.alanpearce.eu/)
 
