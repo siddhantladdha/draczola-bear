@@ -52,7 +52,6 @@ theme = "dracula"
 error_on_missing_language = true
 
 [extra]
-extra]
 # Choose color scheme: "dracula" (default), "alucard"
 color_scheme = "dracula"
 date_format = "%Y-%m-%d"
