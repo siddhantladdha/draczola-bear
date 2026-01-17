@@ -63,6 +63,10 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 | --------  | -------- | ------ |
 | *italics* | **bold** | `code` |
 
+# Math
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
 # Code Blocks
 
 ## Code block with backticks
