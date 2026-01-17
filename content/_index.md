@@ -11,10 +11,11 @@ Zola Bear Blog is all you need to build a fantastic and optimized site or blog. 
 ---
 
 What happens when you combine the worlds' fastest, most lightweight static site generator with a design theme built to provide you with free, no-nonsense, super-fast blogging capabilities?
+And now it is available in Dracula (A universal Dark theme).
 
 **Use this theme, and find out!**
 
-Made with 💚 by [Alan Pearce](https://alanpearce.eu).
+Draculafied with 💜 by Siddhant Laddha. Originally made with 💜   by [Alan Pearce](https://alanpearce.eu).
 
 ---
 
