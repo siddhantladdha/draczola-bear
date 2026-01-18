@@ -1,7 +1,6 @@
 # Draczola ʕ•ᴥ•ʔ Bear Blog
 
-[![Zola on GitHub Pages](https://github.com/siddhantladdha/draczola-bear/actions/workflows/zola.yml/badge.svg?branch=main)](https://github.com/siddhantladdha/draczola-bear/actions/workflows/zola.yml)
-[![pages-build-deployment](https://github.com/siddhantladdha/draczola-bear/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/siddhantladdha/draczola-bear/actions/workflows/pages/pages-build-deployment)
+[![Deploy Zola site to Pages](https://github.com/siddhantladdha/draczola-bear/actions/workflows/zola-minimal.yml/badge.svg)](https://github.com/siddhantladdha/draczola-bear/actions/workflows/zola-minimal.yml)
 
 🧸 A [Zola](https://www.getzola.org/)-theme based on [Bear Blog](https://bearblog.dev) now in [Dracula colors](https://draculatheme.com/)
 
