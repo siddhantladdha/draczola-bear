@@ -17,7 +17,9 @@ description = "A Zola-theme based on Bear Blog in Dracula colors (A universal da
 default_language = "en"
 
 # The site theme to use.
-theme = "draczola-bear"
+theme = ""
+# Use the following instead if you are using submodule method.
+# theme = "draczola-bear"
 
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
 output_dir = "public"
