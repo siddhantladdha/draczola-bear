@@ -287,10 +287,6 @@ site = "Site"
 # Defaults are taken from theme.toml
 date_format = "%Y-%m-%d"
 webserver_sends_csp_headers = false
-[extra.table_of_contents]
-show = true
-max_level = 3
-visible_on_load = false
 # Choose color scheme: "dracula" (default), "alucard"
 color_scheme = "dracula"
 language_switcher = true
@@ -303,7 +299,10 @@ translations = [
 hide_made_with_line = false
 # Currently only CC BY-NC-SA supported. 
 show_copyright_in_footer = true
-
+[extra.table_of_contents]
+show = true
+max_level = 3
+visible_on_load = false
 # These are extra keys which are specific to this theme's layout.
 # You can essentially see that they show up on the header. 
 # Create an array in extra with a key of main_menu. url is passed to [get_url](https://www.getzola.org/documentation/templates/overview/#get-url)
