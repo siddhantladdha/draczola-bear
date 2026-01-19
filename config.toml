@@ -263,10 +263,6 @@ site = "site"
 [languages.de]
 title = "Zola ʕ•ᴥ•ʔ Bear Blog"
 description = "Ein Zola-Thema basierend auf Bear Blog in Dracula-Farben (ein universelles dunkles Thema)"
-taxonomies = [
-  { name = "kategorien", feed = true },
-  { name = "schilder", feed = true },
-]
 [languages.de.translations]
 no_posts = "Keine Einträge"
 remove_filter = "Filter entfernen"
