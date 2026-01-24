@@ -6,4 +6,13 @@
   <nav aria-label="{{ trans(key="site", lang=lang)}}">
     {%- include "nav.html" %}
   </nav>
+  {%- if config.build_search_index %}
+  <div class="search-container">
+    <input type="search" id="search" placeholder="Search...">
+    <div class="search-results">
+      <div class="search-results__header"></div>
+      <ul class="search-results__items"></ul>
+    </div>
+  </div>
+  {%- endif %}
 </header>
