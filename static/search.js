@@ -39,15 +39,15 @@ function makeTeaser(body, terms) {
   // split in sentences, then words
   var sentences = body.toLowerCase().split(". ");
 
-  for (var i in sentences) {
+  for (var i = 0; i < sentences.length; i++) {
     var words = sentences[i].split(" ");
     var value = FIRST_WORD_WEIGHT;
 
-    for (var j in words) {
+    for (var j = 0; j < words.length; j++) {
       var word = words[j];
 
       if (word.length > 0) {
-        for (var k in stemmedTerms) {
+        for (var k = 0; k < stemmedTerms.length; k++) {
           if (elasticlunr.stemmer(word).startsWith(stemmedTerms[k])) {
             value = TERM_WEIGHT;
             termFound = true;
@@ -190,7 +190,7 @@ function initSearch() {
   }, 150));
 
   window.addEventListener('click', function(e) {
-    if ($searchResults.style.display == "block" && !$searchResults.contains(e.target)) {
+    if ($searchResults.style.display === "block" && !$searchResults.contains(e.target)) {
       $searchResults.style.display = "none";
     }
   });
