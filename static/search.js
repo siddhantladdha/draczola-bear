@@ -146,12 +146,19 @@ function initSearch() {
   
   var initIndex = async function () {
     if (index === undefined) {
-      index = fetch(window.base_url + "/search_index.en.js")
-        .then(
-          async function(response) {
-            return await elasticlunr.Index.load(await response.json());
+      index = new Promise((resolve) => {
+        if (window.searchIndex) {
+          resolve(elasticlunr.Index.load(window.searchIndex));
+        } else {
+          // Wait for the search index script to load
+          const checkSearchIndex = setInterval(() => {
+            if (window.searchIndex) {
+              clearInterval(checkSearchIndex);
+              resolve(elasticlunr.Index.load(window.searchIndex));
+            }
+          }, 50);
         }
-      );
+      });
     }
     let res = await index;
     return res;
