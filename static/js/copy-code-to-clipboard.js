@@ -1,4 +1,3 @@
-// Source: https://github.com/ebkalderon/terminus/blob/main/static/js/copy-code-to-clipboard.js
 const codeBlocks = document.querySelectorAll("pre code[data-lang]");
 
 for (const codeBlock of codeBlocks) {

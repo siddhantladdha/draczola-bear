@@ -25,12 +25,11 @@ translations = [
 # hide made with line.
 hide_made_with_line = false
 show_copyright_in_footer = true
+copy_code_clipboard = false
 [extra.table_of_contents]
 show = true
 max_level = 3
 visible_on_load = false
-[extra.code_blocks]
-copy_button = false
 
 [author]
 name = "Siddhant Laddha"

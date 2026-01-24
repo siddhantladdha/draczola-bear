@@ -299,12 +299,11 @@ translations = [
 hide_made_with_line = false
 # Currently only CC BY-NC-SA supported. 
 show_copyright_in_footer = true
+copy_code_clipboard = true
 [extra.table_of_contents]
 show = true
 max_level = 3
 visible_on_load = false
-[extra.code_blocks]
-copy_button = true
 # These are extra keys which are specific to this theme's layout.
 # You can essentially see that they show up on the header. 
 # Create an array in extra with a key of main_menu. url is passed to [get_url](https://www.getzola.org/documentation/templates/overview/#get-url)
