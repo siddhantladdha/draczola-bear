@@ -303,6 +303,7 @@ show_copyright_in_footer = true
 show = true
 max_level = 3
 visible_on_load = false
+copy_button = true
 # These are extra keys which are specific to this theme's layout.
 # You can essentially see that they show up on the header. 
 # Create an array in extra with a key of main_menu. url is passed to [get_url](https://www.getzola.org/documentation/templates/overview/#get-url)

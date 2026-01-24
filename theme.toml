@@ -29,6 +29,7 @@ show_copyright_in_footer = true
 show = true
 max_level = 3
 visible_on_load = false
+copy_button = false
 
 [author]
 name = "Siddhant Laddha"
