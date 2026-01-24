@@ -7,7 +7,7 @@ for (const codeBlock of codeBlocks) {
             .map((row) => row.querySelector("td:last-child")?.innerText ?? "")
             .join("");
     } else {
-        content = codeBlock.innerText.split("\n").filter(Boolean).join("\n");
+        content = codeBlock.innerText;
     }
 
     if (navigator.clipboard !== undefined) {
@@ -16,9 +16,13 @@ for (const codeBlock of codeBlocks) {
         copyButton.innerText = "Copy";
 
         copyButton.addEventListener("click", () => {
-            copyButton.innerText = "Copied!";
-            navigator.clipboard.writeText(content);
-            setTimeout(() => copyButton.innerText = "Copy", 1000);
+            navigator.clipboard.writeText(content).then(() => {
+                copyButton.innerText = "Copied!";
+                setTimeout(() => copyButton.innerText = "Copy", 1000);
+            }).catch(() => {
+                copyButton.innerText = "Failed";
+                setTimeout(() => copyButton.innerText = "Copy", 1000);
+            });
         });
 
         codeBlock.prepend(copyButton);

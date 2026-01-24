@@ -16,12 +16,9 @@ The [original theme](https://codeberg.org/alanpearce/zola-bearblog) has multiple
 
 # Features
 
-- **Code Block Copy Button**: One-click copying of code snippets to clipboard. Enable by setting `copy_button = true` in the `[extra.table_of_contents]` section of your `config.toml`:
+- **Code Block Copy Button**: One-click copying of code snippets to clipboard. Enable by setting `copy_button = true` in the `[extra.code_blocks]` section of your `config.toml`:
   ```toml
-  [extra.table_of_contents]
-  show = true
-  max_level = 3
-  visible_on_load = false
+  [extra.code_blocks]
   copy_button = true
   ```
 
