@@ -1,3 +1,4 @@
+// Source: https://github.com/ebkalderon/terminus/blob/main/static/js/copy-code-to-clipboard.js
 const codeBlocks = document.querySelectorAll("pre code[data-lang]");
 
 for (const codeBlock of codeBlocks) {
@@ -7,7 +8,7 @@ for (const codeBlock of codeBlocks) {
             .map((row) => row.querySelector("td:last-child")?.innerText ?? "")
             .join("");
     } else {
-        content = codeBlock.innerText;
+        content = codeBlock.innerText.split("\n").filter(Boolean).join("\n");
     }
 
     if (navigator.clipboard !== undefined) {
@@ -16,13 +17,9 @@ for (const codeBlock of codeBlocks) {
         copyButton.innerText = "Copy";
 
         copyButton.addEventListener("click", () => {
-            navigator.clipboard.writeText(content).then(() => {
-                copyButton.innerText = "Copied!";
-                setTimeout(() => copyButton.innerText = "Copy", 1000);
-            }).catch(() => {
-                copyButton.innerText = "Failed";
-                setTimeout(() => copyButton.innerText = "Copy", 1000);
-            });
+            copyButton.innerText = "Copied!";
+            navigator.clipboard.writeText(content);
+            setTimeout(() => copyButton.innerText = "Copy", 1000);
         });
 
         codeBlock.prepend(copyButton);
