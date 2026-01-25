@@ -17,9 +17,15 @@
   {%- endfor -%}
   {%- endblock -%}
   {%- endif %}
-  <style>
-  {% include "style.css.html" ignore missing %}
-  </style>
+
+  {% if config.extra.color_scheme == "alucard" %}
+  <link rel="stylesheet" href="{{ get_url( path="css/alucard.css", trailing_slash=false) | safe }}" />
+  <link id="giallo-dark" rel="stylesheet" href="{{ get_url( path="/giallo-light.css", trailing_slash=false) | safe }}" />
+  {% else %}
+  <link rel="stylesheet" href="{{ get_url( path="css/dracula.css", trailing_slash=false) | safe }}" />
+  <link id="giallo-dark" rel="stylesheet" href="{{ get_url( path="/giallo-dark.css", trailing_slash=false) | safe }}" />
+  {% endif %}
+  <link rel="stylesheet" href="{{ get_url( path="css/style.css", trailing_slash=false) | safe }}" />
   {%- include "custom_head.html" ignore missing %}
 </head>
 <body>

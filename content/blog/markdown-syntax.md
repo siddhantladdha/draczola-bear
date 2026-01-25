@@ -85,19 +85,6 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </html>
 ```
 
-## Code block indented with four spaces
-
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
 # List Types
 
 ## Ordered List
@@ -123,3 +110,5 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
   * Cheese
 
 ## Other Elements — abbr, sub, sup, kbd, mark
+
+This is a <mark>HTML mark element</mark>

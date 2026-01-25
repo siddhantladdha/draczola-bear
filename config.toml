@@ -168,12 +168,9 @@ style = "class"
 
 # Selecting a theme is always required: you have a choice between single (1) or dual themes (2).
 # Only outputting CSS classes like before 0.22 is not possible anymore.
-# 1. If you use a single theme, put its name here. See the syntax highlighting page for the possible choices.
-theme = "dracula"
-
 # 2. If you want light/dark themes, use the 2 fields below instead. See the syntax highlighting page for the possible choices.
-light_theme = ""
-dark_theme = ""
+light_theme = "dracula" # No alucard light theme available yet.
+dark_theme = "dracula"
 
 # A list of files for additional JSON TextMate grammars
 extra_grammars = []
@@ -297,14 +294,14 @@ translations = [
 # Change to true to
 # hide made with line.
 hide_made_with_line = false
-# Currently only CC BY-NC-SA supported. 
+# Currently only CC BY-NC-SA supported.
 show_copyright_in_footer = true
 [extra.table_of_contents]
 show = true
 max_level = 3
 visible_on_load = false
 # These are extra keys which are specific to this theme's layout.
-# You can essentially see that they show up on the header. 
+# You can essentially see that they show up on the header.
 # Create an array in extra with a key of main_menu. url is passed to [get_url](https://www.getzola.org/documentation/templates/overview/#get-url)
 [[extra.main_menu]]
 name = "Home"

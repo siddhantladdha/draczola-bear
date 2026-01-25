@@ -1,22 +1,20 @@
-{% if config.extra.color_scheme == "alucard" %}
-{% include "alucard.css.html" ignore missing %}
-{% else %} 
-{% include "dracula.css.html" %}
-{% endif %}
-
 :root {
   /* mappings for website */
   --background-color: var(--background);
   --heading-color: var(--pink);
   --text-color: var(--foreground);
   --link-color: var(--cyan);
-  --visited-color: var(--purple);
+  --link-visited-color: var(--purple);
   --code-background-color: var(--background-dark);
   --code-color: var(--foreground);
   --blockquote-border-color: var(--orange);
-  --mark-background-color: var(--background-color);
-  --mark-color: var(--yellow);
+  --mark-background-color: var(--yellow);
+  --mark-color: var(--background);
+  --selection-background-color: var(--yellow);
+  --selection-color: var(--background);
+  --success-color: var(--green);
 }
+
 :root {
     --width: 800px;
     --font-main: Verdana, sans-serif;
@@ -66,6 +64,7 @@
     font-weight: bold;
     margin-right: 10px;
   }
+
   strong,
   b {
     color: var(--heading-color);
@@ -109,7 +108,7 @@
 
   pre.copied code::after {
     content: "[copied]";
-    color: var(--green);
+    color: var(--success-color);
   }
 
   pre code {
@@ -130,10 +129,27 @@
     border-radius: 3px;
   }
 
+  .giallo-l {
+    display: inline-block;
+    min-height: 1lh;
+    width: 100%;
+  }
+
+  .giallo-ln {
+    display: inline-block;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0.4em;
+    min-width: 3ch;
+    text-align: right;
+    opacity: 0.8;
+  }
+
   mark {
     background-color: var(--mark-background-color);
     color: var(--mark-color);
   }
+
   blockquote {
     border-left: 1px solid var(--blockquote-border-color);
     color: var(--code-color);
@@ -184,7 +200,7 @@
   }
 
   ul.blog-posts li a:visited {
-    color: var(--visited-color);
+    color: var(--link-visited-color);
   }
 
   .tags {
@@ -195,29 +211,23 @@
     display: flex;
     margin-top: 1em;
   }
+
   .footnote-definition-label {
     margin-left: 1rem;
     margin-right: 0.5rem;
     vertical-align: baseline;
   }
+
   .footnote-definition-label::after {
     content: "."
   }
+
   .footnote-definition > p {
     margin: 0;
   }
 
-  .giallo-l {
-  display: inline-block;
-  min-height: 1lh;
-  width: 100%;
-  }
-  .giallo-ln {
-  display: inline-block;
-  user-select: none;
-  margin-right: 0.4em;
-  padding: 0.4em;
-  min-width: 3ch;
-  text-align: right;
-  opacity: 0.8;
-  }
+  ::selection,
+  ::-moz-selection {
+  background-color: var(--selection-background-color);
+  color: var(--selection-color);
+}
