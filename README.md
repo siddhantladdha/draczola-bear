@@ -10,7 +10,7 @@
 
 # Demo
 
-[Github Pages Demo](https://siddhantladdha.com/draczola-bear/)
+[Github Pages Demo](https://sid555.com/draczola-bear/)
 
 The [original theme](https://codeberg.org/alanpearce/zola-bearblog) has multiple demo sites, to provide examples of how to set up deployment.
 
