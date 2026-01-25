@@ -16,11 +16,12 @@ The [original theme](https://codeberg.org/alanpearce/zola-bearblog) has multiple
 
 # Thank you!
 
-A special thank you goes out to 
+A special thank you goes out to
 - [Herman](https://herman.bearblog.dev) for creating the original [ʕ•ᴥ•ʔ Bear Blog](https://bearblog.dev/)
 - [Jan Raasch](https://www.janraasch.com) for creating the hugo port of the Bear Blog theme.
 - [Alan Pearce and Contributors](https://codeberg.org/alanpearce/zola-bearblog) for creating the zola port of the Hugo theme, which I used as the base for this fork.
 - [This gist](https://gist.github.com/mathwo/4958a7e50be85743615c18d9e34109e9) and [MATBook Zola theme](https://github.com/srliu3264/MATbook) for MathJax support.
+- [This blog post](https://picostitch.com/blog/2025/05/allow2copy/) for an elegant copy button implementation.
 
 # License
 
