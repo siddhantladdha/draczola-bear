@@ -93,6 +93,25 @@
     max-width: 100%;
   }
 
+  /* Source: https://picostitch.com/blog/2025/05/allow2copy/ */
+
+  pre:has(> code) {
+    position: relative;
+  }
+
+  pre code::after {
+    content: "[copy]";
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0.5em;
+  }
+
+  pre.copied code::after {
+    content: "[copied]";
+    color: var(--green);
+  }
+
   pre code {
     background-color: var(--code-background-color);
     color: var(--code-color);
@@ -186,4 +205,19 @@
   }
   .footnote-definition > p {
     margin: 0;
+  }
+
+  .giallo-l {
+  display: inline-block;
+  min-height: 1lh;
+  width: 100%;
+  }
+  .giallo-ln {
+  display: inline-block;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0.4em;
+  min-width: 3ch;
+  text-align: right;
+  opacity: 0.8;
   }
