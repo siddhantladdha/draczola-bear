@@ -163,8 +163,8 @@ insert_anchor_links = "none"
 # When set to "true", missing highlight languages are treated as errors. Defaults to false but recommended to set to true.
 error_on_missing_language = true
 
-# Whether to use inline hex colours (`inline`) or CSS classes (`class`) 
-style = "inline"
+# Whether to use inline hex colours (`inline`) or CSS classes (`class`)
+style = "class"
 
 # Selecting a theme is always required: you have a choice between single (1) or dual themes (2).
 # Only outputting CSS classes like before 0.22 is not possible anymore.
