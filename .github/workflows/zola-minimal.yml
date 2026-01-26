@@ -9,8 +9,8 @@ name: Deploy Zola site to Pages
 # Poorly written..
 env:
     PKG_NAME: "zola"
-    PKG_VERSION: "v0.22.0"
-    PKG_SHA256: 6779422b27274a4bb4ea2981e730c951703e1c9b9ca7944bf98a538f8a7ec679
+    PKG_VERSION: "v0.22.1"
+    PKG_SHA256: 227df99b664421240a8ba77747067c51259b08159125d5603763b3b173b9a881
     PKG_BASE_URL: "https://github.com/getzola/zola/releases/download/"
     PLATFORM: "x86_64-unknown-linux-musl"
 
