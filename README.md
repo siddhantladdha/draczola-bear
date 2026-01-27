@@ -14,6 +14,19 @@
 
 The [original theme](https://codeberg.org/alanpearce/zola-bearblog) has multiple demo sites, to provide examples of how to set up deployment.
 
+# Usage
+
+The [original theme](https://codeberg.org/alanpearce/zola-bearblog) has good documentation for the key features. Here I will only illustrate the addtional features exposed.
+
+- [x] MathJax support can be enabled in pages.
+- [x] Minimal click-to-copy available for code blocks.
+- [x] Copyright in Footer made available.
+- [x] Dracula and Alucard themes available.
+- [x] [Github template repository](https://github.com/siddhantladdha/draczola-bear-template) with a github actions workflow already setup.
+- [ ] Theme switcher.
+- [ ] Simple search functionality.
+- [ ] Basic svg icons available for RSS and Github links in footer.
+
 # Thank you!
 
 A special thank you goes out to
