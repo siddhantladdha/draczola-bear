@@ -322,6 +322,11 @@ name_de = "Zola"
 url = "@/zola.md"
 
 [[extra.main_menu]]
+name = "Notes"
+name_de = "Notes"
+url = "@/notes/_index.md"
+
+[[extra.main_menu]]
 name = "Blog"
 name_de = "Blog"
 url = "@/blog/_index.md"
