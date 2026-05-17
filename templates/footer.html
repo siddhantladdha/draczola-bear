@@ -1,9 +1,13 @@
 <footer>
-  {%- if not config.extra.hide_made_with_line %}
+{%- if not config.extra.hide_made_with_line %}
 {{ trans(key="made_with", lang=lang) }} <a href="https://github.com/siddhantladdha/draczola-bear">Draczola ʕ•ᴥ•ʔ Bear</a>
 {%- endif %}
 <br>
-{%- if config.extra.show_copyright_in_footer %}
-This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-{%- endif %}
+{%- if config.extra.license is containing("CC BY") %}
+{%- set license_text = config.extra.license | trim_start_matches(pat="CC ") | trim_end_matches(pat=" 4.0") -%}
+This work is licensed under <a href="https://creativecommons.org/licenses/{{ license_text | lower }}/4.0/">CC {{ license_text | upper }} 4.0</a>
+{% elif config.extra.license is containing("CC0") %}
+This work is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+{% else %}
+{% endif %}
 </footer>
